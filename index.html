@@ -8,27 +8,21 @@
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="stylesheet" href="./css/dark-ligth.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
     <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}   
-    /* Defina os estilos para o tema Dark */
-    .dark-theme {
-      background-color: #333;
-      color: #fff;
-    }
-    .dark-theme a{
-      color:#fff;
-    }
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </style>
     
   </head>
 
   <body class="w3-light-grey" cz-shortcut-listen="true">
-  
+    <button id="mode-selector" title="Mudar Tema">
+      <i class="fa fa-adjust" style="font-size:48px"></i>
+    </button>
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
   
@@ -39,7 +33,7 @@
         <div class="w3-third">
   
           <div class="w3-white w3-text-grey w3-card-4">
-            <!-- @falvojr: This container has been modified to not use a profile picture. -->
+            <!-- @EriFranca: This container has been modified to not use a profile picture. -->
             <div class="w3-container">
               <h2>Eri Cleiton França da Silva</h2>
             </div>
@@ -206,16 +200,7 @@
       <a href="https://www.linkedin.com/in/eri-fran%C3%A7a-b6a071191/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </footer>
-
-  <!-- Botão para alternar entre os temas -->
-  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-  <script>
-    function toggleDarkMode() {
-      var element = document.body;
-      element.classList.toggle("dark-theme");
-    }
-  </script>
+  </script src="./js/dark-light.js"></script>
   </body>
 
 </html>
