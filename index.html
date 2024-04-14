@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}   
+    /* Defina os estilos para o tema Dark */
+    .dark-theme {
+      background-color: #333;
+      color: #fff;
+    }
     </style>
     
   </head>
@@ -198,7 +203,16 @@
       <a href="https://www.linkedin.com/in/eri-fran%C3%A7a-b6a071191/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </footer>
-  
+    
+  <!-- Botão para alternar entre os temas -->
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <script>
+    function toggleDarkMode() {
+      var element = document.body;
+      element.classList.toggle("dark-theme");
+    }
+  </script>
   </body>
 
 </html>
